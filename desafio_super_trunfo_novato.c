@@ -16,18 +16,18 @@ int main(){
 
     //Coletando informação da primeira carta
      
-    printf("insira o número da carta que deseja adicionar:\n");
+    printf("Insira o número da carta que deseja adicionar:\n");
     scanf("%d", &numero_da_carta1);
 
     printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'A' a 'H'):\n");
     scanf("%s", &estado1);
-    printf("insira o código da carta(ESTADO + NUMERO de '1' a '4' Ex :A01 , B02....):\n");
+    printf("Insira o código da carta(ESTADO + NUMERO de '1' a '4' Ex :A01 , B02....):\n");
     scanf("%s", &codigo_da_carta1);
 
-    printf("insira o nome da cidade desta carta: \n");
+    printf("Insira o nome da cidade desta carta: \n");
     scanf("%s", &nome_da_cidade1);
 
-    printf("insira a população de %s\n",nome_da_cidade1);
+    printf("Insira a população de %s\n",nome_da_cidade1);
     scanf("%d", &populacao1);
 
 
@@ -41,7 +41,7 @@ int main(){
     scanf("%d",&PT1);
     printf("\n");
     
-    printf("informações da carta inseridas com sucesso!\n");
+    printf("Informações da carta inseridas com sucesso!\n");
     printf("\n");
     printf("\n");
     printf("\n");
@@ -51,19 +51,19 @@ int main(){
    
     //Fim da primeira coleta e Inicio da segunda
 
-    printf("insira o número da segunda carta que deseja adicionar:\n");
+    printf("Insira o número da segunda carta que deseja adicionar:\n");
     scanf("%d", &numero_da_carta2);
 
     printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'B' a 'H'):\n");
     scanf("%s", &estado2);
 
-    printf("insira o código da carta(ESTADO + NUMERO de '2' a '4' Ex : B02, C03...):\n");
+    printf("Insira o código da carta(ESTADO + NUMERO de '2' a '4' Ex : B02, C03...):\n");
     scanf("%s", &codigo_da_carta2);
 
-    printf("insira o nome da cidade desta carta: \n");
+    printf("Insira o nome da cidade desta carta: \n");
     scanf("%s", &nome_da_cidade2);
 
-    printf("insira a população de %s\n",nome_da_cidade2);
+    printf("Insira a população de %s\n",nome_da_cidade2);
     scanf("%d", &populacao2);
 
 
@@ -77,11 +77,11 @@ int main(){
     scanf("%d",&PT2);
     printf("\n");
     
-    printf("informações da carta inseridas com sucesso!\n");
+    printf("Informações da carta inseridas com sucesso!\n");
     printf("\n");
    
 
-    printf("informações da carta inseridas com sucesso!\n");
+    printf("Informações da carta inseridas com sucesso!\n");
     printf("\n");
     printf("\n");
     //FIM DA COLETA
