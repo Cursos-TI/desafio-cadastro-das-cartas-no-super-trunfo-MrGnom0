@@ -10,15 +10,18 @@ int main(){
 
     // PT1 E PT2 SÃO  ABREVIAÇÃO DE "PONTOS TURISTICOS"
     
+    //Apresentação
+    printf("SUPERTRUNFO\n");
 
     //Coletando informação da primeira carta
+     
 
     printf("insira o número da carta que deseja adicionar:\n");
     scanf("%d", &numero_da_carta1);
 
-    printf("insira a letra inicial do estado dessa carta:\n");
+    printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'A' a 'H'):\n");
     scanf("%s", &estado1);
-    printf("Qual o código desta carta (LETRA INICIAL + NUMERO ):\n");
+    printf("insira o código da carta( ESTADO + NUMERO de '1' a '4' Ex :A1 , B2 ):\n");
     scanf("%s", &codigo_da_carta1);
 
     printf("insira o nome da cidade desta carta: \n");
@@ -47,10 +50,10 @@ int main(){
     printf("insira o número da segunda carta que deseja adicionar:\n");
     scanf("%d", &numero_da_carta2);
 
-    printf("insira a letra inicial do estado dessa carta:\n");
+    printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'A' a 'H'):\n");
     scanf("%s", &estado2);
 
-    printf("Qual o código desta carta (LETRA INICIAL + NUMERO ):\n");
+    printf("insira o código da carta( ESTADO + NUMERO de '1' a '4' Ex :A1 , B2 ):\n");
     scanf("%s", &codigo_da_carta2);
 
     printf("insira o nome da cidade desta carta: \n");
@@ -84,7 +87,7 @@ int main(){
     printf("\n");
     printf("Estado: %s", estado1);
     printf("\n");
-    printf("Código: %s",codigo_da_carta1);
+    printf("Código: 0%s",codigo_da_carta1);
     printf("\n");
     printf("Nome da Cidade: %s", nome_da_cidade1);
     printf("\n");
@@ -103,7 +106,7 @@ int main(){
     printf("\n");
     printf("Estado: %s", estado2);
     printf("\n");
-    printf("Código: %s",codigo_da_carta2);
+    printf("Código: 0%s",codigo_da_carta2);
     printf("\n");
     printf("Nome da Cidade: %s", nome_da_cidade2);
     printf("\n");
