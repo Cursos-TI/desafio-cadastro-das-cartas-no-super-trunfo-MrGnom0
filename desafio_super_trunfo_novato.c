@@ -2,11 +2,11 @@
 
 int main(){
     //Se necessário for adicionar mais cartas, basta adicionar mais variações das abaixo (exemplo nome_da_cidade3 nome_da_cidade4 .....)
-    int populacao1,populacao2,PT2,PT1,numero_da_carta1,numero_da_carta2;
+    int populacao1,populacao2,PT1,PT2,numero_da_carta1,numero_da_carta2;
     
     float area1, area2 ,PIB1,PIB2;
     
-    char nome_da_cidade1[20],nome_da_cidade2[20],codigo_da_carta1[10], codigo_da_carta2[10], estado1[10], estado2[10];
+    char nome_da_cidade1[20],nome_da_cidade2[20],codigo_da_carta1[10],codigo_da_carta2[10],estado1[10], estado2[10];
 
     // PT1 E PT2 SÃO  ABREVIAÇÃO DE "PONTOS TURISTICOS"
     
@@ -21,7 +21,7 @@ int main(){
 
     printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'A' a 'H'):\n");
     scanf("%s", &estado1);
-    printf("Insira o código da carta(ESTADO + NUMERO de '1' a '4' Ex :A01 , B02....):\n");
+    printf("Insira o código da carta (ESTADO + NUMERO de '1' a '4' Ex :A01 , B02....):\n");
     scanf("%s", &codigo_da_carta1);
 
     printf("Insira o nome da cidade desta carta: \n");
@@ -57,7 +57,7 @@ int main(){
     printf("Insira o estado da carta escolhendo uma letra (letras disponiveis entre 'B' a 'H'):\n");
     scanf("%s", &estado2);
 
-    printf("Insira o código da carta(ESTADO + NUMERO de '2' a '4' Ex : B02, C03...):\n");
+    printf("Insira o código da carta (ESTADO + NUMERO de '2' a '4' Ex : B02, C03...):\n");
     scanf("%s", &codigo_da_carta2);
 
     printf("Insira o nome da cidade desta carta: \n");
@@ -79,9 +79,6 @@ int main(){
     
     printf("Informações da carta inseridas com sucesso!\n");
     printf("\n");
-   
-
-    printf("Informações da carta inseridas com sucesso!\n");
     printf("\n");
     printf("\n");
     //FIM DA COLETA
