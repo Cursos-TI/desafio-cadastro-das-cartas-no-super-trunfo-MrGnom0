@@ -26,7 +26,7 @@ int main(){
     scanf("%s", codigo_da_carta1);
 
     printf("Insira o nome da cidade desta carta: \n");
-    scanf("%s", &nome_da_cidade1);
+    scanf("%s", nome_da_cidade1);
 
     printf("Insira a população de %s:\n", nome_da_cidade1);
     scanf("%d", &populacao1);
@@ -80,11 +80,13 @@ int main(){
     printf("\n");
     printf("\n");
 
-    //defindo valor de densidade polulacional e percapita
+    //Defindo valor de densidade polulacional e percapita
+    //Para corrigir a divisão se faz necessários multiplicar por *1000000000 devido a grandesa dos numeros inseridos serem diferentes, se atente a esse detalhe ao inserir novas cidades
+
     densidadepop1 =  populacao1 / area1;
     densidadepop2 =  populacao2 / area2;
-    percapta1 =  PIB1 / populacao1;
-    percapta2 =  PIB2 / populacao2;
+    percapta1 = (PIB1 * 1000000000) / populacao1;
+    percapta2 = (PIB1 * 1000000000) / populacao2;
     
 
 
