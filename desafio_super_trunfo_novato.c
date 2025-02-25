@@ -4,7 +4,7 @@ int main(){
     //Se necessário for adicionar mais cartas, basta adicionar mais variações das abaixo (exemplo nome_da_cidade3 nome_da_cidade4 .....)
     int populacao1,populacao2,PT1,PT2,numero_da_carta1,numero_da_carta2;
     
-    float area1, area2 ,PIB1,PIB2;
+    float area1, area2 ,PIB1,PIB2,densidadepop1,densidadepop2,percapta1,percapta2;
     
     char nome_da_cidade1[20],nome_da_cidade2[20],codigo_da_carta1[10],codigo_da_carta2[10],estado1,estado2;
 
@@ -31,10 +31,10 @@ int main(){
     printf("Insira a população de %s:\n", nome_da_cidade1);
     scanf("%d", &populacao1);
 
-    printf("Insira a área em km² de %s:\n", nome_da_cidade1);
+    printf("Insira a área em km² de %s (use ponto para separar decimais, ex 1234.22):\n", nome_da_cidade1);
     scanf("%f", &area1);
 
-    printf("Insira o PIB de %s\n",nome_da_cidade1);
+    printf("Insira o PIB de %s em bilhoes de reais(ex : 124.55)\n",nome_da_cidade1);
     scanf("%f", &PIB1);
 
     printf("Insira a quantidade de pontos turísticos de %s:\n", nome_da_cidade1);
@@ -42,14 +42,11 @@ int main(){
 
     printf("\n");
     
-    printf("Informações da carta inseridas com sucesso!\n");
+    printf("***Informações da carta inseridas com sucesso***\n");
     printf("\n");
     printf("\n");
     printf("\n");
-    printf("\n");
-
-  
-   
+    
     //Fim da primeira coleta e Inicio da segunda
 
     printf("Insira o número da segunda carta que deseja adicionar:\n");
@@ -68,20 +65,29 @@ int main(){
     scanf("%d", &populacao2);
 
 
-    printf("Insira a área em km² de  %s\n",nome_da_cidade2);
+    printf("Insira a área em km² de %s (use ponto para separar decimais, ex 1234.22):\n", nome_da_cidade2);
     scanf("%f", &area2);
 
-    printf("Insira o PIB de %s\n",nome_da_cidade2);
+    printf("Insira o PIB de %s em bilhoes de reais(ex : 124.55)\n",nome_da_cidade2);
     scanf("%f", &PIB2);
 
     printf("Insira a quantidade de pontos túristicos de %s\n",nome_da_cidade2);
     scanf("%d",&PT2);
     printf("\n");
     
-    printf("Informações da carta inseridas com sucesso!\n");
+    printf("***Informações da carta inseridas com sucesso***\n");
     printf("\n");
     printf("\n");
     printf("\n");
+
+    //defindo valor de densidade polulacional e percapita
+    densidadepop1 =  populacao1 / area1;
+    densidadepop2 =  populacao2 / area2;
+    percapta1 =  PIB1 / populacao1;
+    percapta2 =  PIB2 / populacao2;
+    
+
+
     //FIM DA COLETA
 
     //EXIBIÇÃO CARTA1
@@ -99,6 +105,10 @@ int main(){
     printf("PIB: %.2f bilhões de reais",PIB1);
     printf("\n");
     printf("Número de Pontos Túristicos: %d",PT1);
+    printf("\n");
+    printf("Densidade Populacional: %.2f", densidadepop1);
+    printf("\n");
+    printf("PIB per Capita:%.2f",percapta1);
     printf("\n");
     printf("\n");
     printf("\n");
@@ -120,10 +130,11 @@ int main(){
     printf("\n");
     printf("Número de Pontos Túristicos: %d",PT2);
     printf("\n");
+    printf("Densidade Populacional: %.2f", densidadepop2);
+    printf("\n");
+    printf("PIB per Capita:%.2f",percapta2);
     printf("\n");
     //Fim da exibição Carta 2
 
-    
-return 0;
-
+    return 0;
 }
