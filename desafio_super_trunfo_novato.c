@@ -1,7 +1,9 @@
 #include <stdio.h> 
 
 int main(){
+
     //Se necessário for adicionar mais cartas, basta adicionar mais variações das abaixo (exemplo nome_da_cidade3 nome_da_cidade4 .....)
+
     int populacao1,populacao2,PT1,PT2,numero_da_carta1,numero_da_carta2;
     
     float area1, area2 ,PIB1,PIB2,densidadepop1,densidadepop2,percapta1,percapta2;
@@ -56,10 +58,10 @@ int main(){
     scanf(" %c", &estado2);
 
     printf("Insira o código da carta (ESTADO + NUMERO de '2' a '4' Ex : B02, C03...):\n");
-    scanf("%s", &codigo_da_carta2);
+    scanf("%s", codigo_da_carta2);
 
     printf("Insira o nome da cidade desta carta: \n");
-    scanf("%s", &nome_da_cidade2);
+    scanf("%s", nome_da_cidade2);
 
     printf("Insira a população de %s\n",nome_da_cidade2);
     scanf("%d", &populacao2);
@@ -79,18 +81,22 @@ int main(){
     printf("\n");
     printf("\n");
     printf("\n");
+   
+    //FIM DA COLETA DE DADOS
 
-    //Defindo valor de densidade polulacional e percapita
-    //Para corrigir a divisão se faz necessários multiplicar por *1000000000 devido a grandesa dos numeros inseridos serem diferentes, se atente a esse detalhe ao inserir novas cidades
 
-    densidadepop1 =  populacao1 / area1;
-    densidadepop2 =  populacao2 / area2;
+    /*Operações aritméticas para obtenção de valores
+    Na divisão,visando obter o valor de  densidade populacional se fez necessário realizar o cast  
+    inserindo (float) forçando o numero inteiro ser tratado com decimal para não perder a precisão
+    na hora da exibição do calculo matematico
+    O PIB é inserido em bilhões, então multiplicamos por 1.000.000.000 para converter para reais.*/  
+    
+    //CALCULOS DE DENSIDADE E PERCAPTA (RESPEITE AS REGRAS ACIMA AO INSERIR NOVAS CIDADES PARA EXIBIÇÃO CORRETA DE VALORES)
+    densidadepop1 = (float)populacao1 / area1;
+    densidadepop2 =  (float)populacao2 / area2;
     percapta1 = (PIB1 * 1000000000) / populacao1;
     percapta2 = (PIB1 * 1000000000) / populacao2;
     
-
-
-    //FIM DA COLETA
 
     //EXIBIÇÃO CARTA1
     printf("CARTA 1:\n");
@@ -108,12 +114,14 @@ int main(){
     printf("\n");
     printf("Número de Pontos Túristicos: %d",PT1);
     printf("\n");
-    printf("Densidade Populacional: %.2f", densidadepop1);
+    printf("Densidade Populacional: %.2f hab/km²", densidadepop1);
     printf("\n");
-    printf("PIB per Capita:%.2f",percapta1);
+    printf("PIB per Capita:%.2f reais ",percapta1);
     printf("\n");
     printf("\n");
     printf("\n");
+
+
     //Fim da exibição da Carta 1
 
     //EXIBIÇÃO CARTA2
@@ -132,9 +140,9 @@ int main(){
     printf("\n");
     printf("Número de Pontos Túristicos: %d",PT2);
     printf("\n");
-    printf("Densidade Populacional: %.2f", densidadepop2);
+    printf("Densidade Populacional: %.2f hab/km²", densidadepop2);
     printf("\n");
-    printf("PIB per Capita:%.2f",percapta2);
+    printf("PIB per Capita:%.2f reais ",percapta2);
     printf("\n");
     //Fim da exibição Carta 2
 
